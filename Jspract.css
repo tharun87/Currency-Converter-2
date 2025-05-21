@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4e4ba;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 70vh;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.amount p {
+  font-weight: bold;
+  color: #444;
+}
+
+#inputVal {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.dropDowns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.select-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e0f7fa;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.select-container select {
+  width: 4rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 0.3rem;
+}
+
+.select-container img {
+  height: 2rem;
+  width: auto;
+}
+
+#swapIcon {
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  color: #333;
+  padding: 8px;
+  background-color:#00FFFF; /* Bootstrap blue */
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(221, 255, 99, 0.2);
+  opacity: 0.95;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.msg p {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#exchngRateBtn {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#exchngRateBtn:hover {
+  background-color: #45a049;
+}
+
+#swapIcon:hover {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 500px) {
+  .select-container select {
+    width: 2.5rem;
+    height: 1rem;
+    font-size: 0.4rem;
+    border: none;
+    border-radius: 1px;
+  }
+
+  .select-container img {
+  height: 1.5rem;
+  width: auto;
+  }
+
+  i.fa-arrow-right-arrow-left {
+  font-size: 1.2rem;
+  color: #333;
+  }
+}
