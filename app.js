@@ -97,3 +97,16 @@ swapIcon.addEventListener("click", () => {
   fetchExchangeRate();
 });
 
+function updateIcon() {
+  const icon = document.getElementById("swapIcon");
+  if (window.innerWidth <= 500) {
+    icon.classList.remove("fa-arrow-right-arrow-left");
+    icon.classList.add("fa-arrows-up-down");
+  } else {
+    icon.classList.remove("fa-arrows-up-down");
+    icon.classList.add("fa-arrow-right-arrow-left");
+  }
+}
+
+window.addEventListener("load", updateIcon);
+window.addEventListener("resize", updateIcon);
