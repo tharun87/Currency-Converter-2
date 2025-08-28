@@ -6,3 +6,5 @@ This is a new file and removed the new line which was added
 <br>
 
 Made some changes and changed the main name
+
+Again changing something changed but not changed
